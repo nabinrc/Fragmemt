@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import fragments.FirstFragment;
+import fragments.SecondFragment;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (status){
             FirstFragment firstFragment = new FirstFragment();
             fragmentTransaction.add(R.id.fragmentContainer,firstFragment);
+
             fragmentTransaction.commit();
             btnFragment.setText("Load second fragement");
             status = false;
@@ -43,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             SecondFragment secondFragment = new SecondFragment();
             fragmentTransaction.add(R.id.fragmentContainer,secondFragment);
             fragmentTransaction.commit();
-            btnFragment.setText("Load second fragment");
+            btnFragment.setText("Load first fragment");
             status = true;
         }
 

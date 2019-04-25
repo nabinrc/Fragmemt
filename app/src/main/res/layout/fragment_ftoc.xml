@@ -1,26 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="match_parent"
+    tools:context="com.e.fragmemt.MainActivity"
     android:orientation="vertical"
-    tools:context="fragments.SecondFragment"
-    android:background="@color/design_default_color_primary">
+    android:background="@color/colorPrimary"
+    >
+
 
     <EditText
-        android:id="@+id/etRadius"
+        android:id="@+id/etFtoc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Radius"
-        android:gravity="center"
+        android:hint="Enter farehnheit value"
         android:layout_margin="10dp"
         android:inputType="number"
+        android:gravity="center"
+
         />
     <Button
-        android:id="@+id/btnAreaOfCircle"
+        android:id="@+id/btnFtoc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Area of Circle"
-        android:layout_margin="10dp"
+        android:layout_margin="50dp"
+        android:text="Covert"
         />
+
 </LinearLayout>
